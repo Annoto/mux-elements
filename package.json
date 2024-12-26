@@ -24,6 +24,8 @@
     "shared/*"
   ],
   "scripts": {
+    "annoto:build": "turbo run build --filter '!./examples/*' --filter '!./packages/mux-player-react'",
+    "annoto:publish": "npm publish -w @annoto/mux-player --access public",
     "format": "prettier --write .",
     "clean": "turbo run clean",
     "lint": "turbo run lint --filter '!./examples/*'",
