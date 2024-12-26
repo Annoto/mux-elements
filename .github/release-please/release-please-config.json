@@ -11,6 +11,11 @@
     },
     {
       "type": "linked-versions",
+      "groupName": "player",
+      "components": ["@mux/mux-player", "@mux/mux-player-react"]
+    },
+    {
+      "type": "linked-versions",
       "groupName": "audio",
       "components": ["@mux/mux-audio", "@mux/mux-audio-react"]
     },
@@ -41,7 +46,7 @@
       "component": "@mux/mux-elements-codemod"
     },
     "packages/mux-player": {
-      "component": "@annoto/mux-player"
+      "component": "@mux/mux-player"
     },
     "packages/mux-player-react": {
       "component": "@mux/mux-player-react"

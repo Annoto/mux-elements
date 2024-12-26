@@ -47,6 +47,12 @@ jobs:
       - name: Clean
         if: ${{ steps.release.outputs.releases_created == 'true' }}
         run: yarn clean
+      - name: Test
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+        run: yarn test
+      - name: Clean
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+        run: yarn clean
       - name: Build
         if: ${{ steps.release.outputs.releases_created == 'true' }}
         run: yarn build:packages
@@ -55,3 +61,19 @@ jobs:
         run: npm exec -c publish-packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: 'Get message'
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+        id: 'deploy_message'
+        run: |
+          echo "::set-output name=commit_msg::$(git log -1 --format=%B)"
+          echo "::set-output name=commit_sha::$(git log -1 --format=%H)"
+      - name: Slack Notify
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+        uses: rtCamp/action-slack-notify@v2.2.0
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_MESSAGE: ${{ steps.deploy_message.outputs.commit_msg }}
+          SLACK_USERNAME: Mux Elements
+          SLACK_ICON: https://avatars.githubusercontent.com/muxinc?size=48
+          SLACK_FOOTER: ''
