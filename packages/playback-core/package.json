@@ -1,6 +1,6 @@
 {
   "name": "@mux/playback-core",
-  "version": "0.27.0",
+  "version": "0.28.2",
   "description": "Core library for media playback in the browser shared by mux elements",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.mjs",
@@ -21,17 +21,17 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs.js",
       "types@<4.3.5": "./dist/types-ts3.4/index.d.ts",
       "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs.js",
       "default": "./dist/index.cjs.js"
     }
   },
   "types": "./dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/muxinc/elements",
+    "url": "git+https://github.com/muxinc/elements.git",
     "directory": "packages/playback-core"
   },
   "author": "Mux, Inc.",
@@ -54,26 +54,25 @@
     "prebuild:types": "shx mkdir -p ./dist/types",
     "build:types": "tsc",
     "postbuild:types": "downlevel-dts ./dist/types ./dist/types-ts3.4 --to=3.4",
-    "build": "npm-run-all --parallel 'build:esm --minify' 'build:iife --minify' 'build:cjs --minify' 'build:esm-module --minify'",
-    "publish-release": "../../scripts/publish.sh"
+    "build": "npm-run-all --parallel 'build:esm --minify' 'build:iife --minify' 'build:cjs --minify' 'build:esm-module --minify'"
   },
   "dependencies": {
-    "hls.js": "~1.5.11",
-    "mux-embed": "^5.3.1"
+    "hls.js": "~1.5.18",
+    "mux-embed": "^5.5.0"
   },
   "devDependencies": {
     "@mux/esbuilder": "0.1.0",
     "@open-wc/testing": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
-    "@web/dev-server-esbuild": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "@web/dev-server-esbuild": "^1.0.3",
     "@web/dev-server-import-maps": "^0.2.1",
     "@web/test-runner": "^0.19.0",
     "downlevel-dts": "^0.11.0",
-    "esbuild": "^0.19.8",
-    "eslint": "^9.9.1",
+    "esbuild": "^0.24.1",
+    "eslint": "^9.17.0",
     "npm-run-all": "^4.1.5",
     "shx": "^0.3.4",
-    "typescript": "^5.5.4"
+    "typescript": "^5.7.2"
   }
 }
