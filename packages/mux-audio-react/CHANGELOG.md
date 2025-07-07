@@ -20,6 +20,107 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.15.11](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.10...@mux/mux-audio-react@0.15.11) (2025-07-03)
+
+
+### Miscellaneous Chores
+
+* **@mux/mux-audio-react:** Synchronize audio versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.30.0 to 0.30.1
+
+## [0.15.10](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.9...@mux/mux-audio-react@0.15.10) (2025-06-23)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.29.1 to 0.30.0
+
+## [0.15.9](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.8...@mux/mux-audio-react@0.15.9) (2025-06-12)
+
+
+### Miscellaneous Chores
+
+* **@mux/mux-audio-react:** Synchronize audio versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.29.0 to 0.29.1
+
+## [0.15.8](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.7...@mux/mux-audio-react@0.15.8) (2025-05-01)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.7 to 0.29.0
+
+## [0.15.7](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.6...@mux/mux-audio-react@0.15.7) (2025-04-10)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.6 to 0.28.7
+
+## [0.15.6](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.5...@mux/mux-audio-react@0.15.6) (2025-04-03)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.5 to 0.28.6
+
+## [0.15.5](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.4...@mux/mux-audio-react@0.15.5) (2025-03-31)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.4 to 0.28.5
+
+## [0.15.4](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.3...@mux/mux-audio-react@0.15.4) (2025-03-21)
+
+
+### Bug Fixes
+
+* upgrade dependencies (castable-video, ...) ([#1087](https://github.com/muxinc/elements/issues/1087)) ([dc84f07](https://github.com/muxinc/elements/commit/dc84f07109565dc7ee29d691a0fc941c6854f762))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.3 to 0.28.4
+
+## [0.15.3](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.15.2...@mux/mux-audio-react@0.15.3) (2025-02-13)
+
+
+### Miscellaneous Chores
+
+* **@mux/mux-audio-react:** Synchronize audio versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.2 to 0.28.3
+
 ## [0.15.2](https://github.com/muxinc/elements/compare/@mux/mux-audio-react@0.12.1...@mux/mux-audio-react@0.15.2) (2024-12-20)
 
 

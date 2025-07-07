@@ -11,7 +11,7 @@ const getPropsCSS = (props: MuxTemplateProps) => {
   const { tokens } = props;
   if (!tokens.drm) return '';
   // See styles.css for usage.
-  return ':host { --_cast-button-drm-display: none; }';
+  return ':host(:not([cast-receiver])) { --_cast-button-drm-display: none; }';
 };
 
 export const template = (props: MuxTemplateProps) => html`
@@ -54,7 +54,7 @@ export const Parts = {
   DISPLAY: 'display',
   CONTROL_BAR: 'control-bar',
   MENU_BUTTON: 'menu-button',
-  LISTBOX: 'listbox',
+  MENU: 'menu',
   OPTION: 'option',
   // component/subcomponent purposes
   POSTER: 'poster',
@@ -102,6 +102,7 @@ export const content = (props: MuxTemplateProps) => html`
     defaultduration="${props.defaultDuration ?? false}"
     hideduration="${props.hideDuration ?? false}"
     title="${props.title ?? false}"
+    videotitle="${props.videoTitle ?? false}"
     proudlydisplaymuxbadge="${props.proudlyDisplayMuxBadge ?? false}"
     exportparts="${partsListStr}"
     onclose="${props.onCloseErrorDialog}"

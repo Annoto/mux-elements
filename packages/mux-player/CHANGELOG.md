@@ -48,6 +48,158 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.5.1](https://github.com/muxinc/elements/compare/@mux/mux-player@3.5.0...@mux/mux-player@3.5.1) (2025-07-03)
+
+
+### Bug Fixes
+
+* upgrade hls.js to 1.6.6, rm workaround MTA (multi-track audio) ([#1162](https://github.com/muxinc/elements/issues/1162)) ([ceb2d15](https://github.com/muxinc/elements/commit/ceb2d156af9f245577d2ca06f8863bec3acaeb80))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.26.0 to 0.26.1
+    * @mux/playback-core bumped from 0.30.0 to 0.30.1
+
+## [3.5.0](https://github.com/muxinc/elements/compare/@mux/mux-player@3.4.1...@mux/mux-player@3.5.0) (2025-06-23)
+
+
+### Features
+
+* Google IMA support for mux-player and mux-video variants ([#1128](https://github.com/muxinc/elements/issues/1128)) ([ec31d4d](https://github.com/muxinc/elements/commit/ec31d4d55e856e20cc67170f25d996afc549403b))
+* retry logic for 412 not playable errors ([#1106](https://github.com/muxinc/elements/issues/1106)) ([677c90a](https://github.com/muxinc/elements/commit/677c90ac3be18290f458be422a2bcc41cd4b7a6d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.25.3 to 0.26.0
+    * @mux/playback-core bumped from 0.29.1 to 0.30.0
+
+## [3.4.1](https://github.com/muxinc/elements/compare/@mux/mux-player@3.4.0...@mux/mux-player@3.4.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* bring back cast button for drm protected videos ([#1137](https://github.com/muxinc/elements/issues/1137)) ([aa3a1ca](https://github.com/muxinc/elements/commit/aa3a1cae56813d1b5bd651392a14ef4325468a31))
+* bump the prod-dependencies group across 2 directories with 1 update ([#1121](https://github.com/muxinc/elements/issues/1121)) ([85a2276](https://github.com/muxinc/elements/commit/85a2276805ae48fe99147fff121141ba6131bd27))
+* bump the prod-dependencies group across 2 directories with 4 updates ([#1138](https://github.com/muxinc/elements/issues/1138)) ([0ac6871](https://github.com/muxinc/elements/commit/0ac68711fbf083964c442b8cea04dd76f1cfd288))
+* **playback-core:** Change default of preferCmcd to 'none' for improved cacheability. Update reference docs to document preferCmcd (et al.). ([#1136](https://github.com/muxinc/elements/issues/1136)) ([4409304](https://github.com/muxinc/elements/commit/44093049b6629044dbb7fed10839f83667fdb37c))
+* rendition-menu visual improvements ([#1131](https://github.com/muxinc/elements/issues/1131)) ([59a2aaa](https://github.com/muxinc/elements/commit/59a2aaaae6140b5e2a7e74faa39b68d0990b593e)), closes [#1122](https://github.com/muxinc/elements/issues/1122)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.25.2 to 0.25.3
+    * @mux/playback-core bumped from 0.29.0 to 0.29.1
+
+## [3.4.0](https://github.com/muxinc/elements/compare/@mux/mux-player@3.3.4...@mux/mux-player@3.4.0) (2025-05-01)
+
+
+### Features
+
+* add fullscreen API on player element ([#1107](https://github.com/muxinc/elements/issues/1107)) ([205f3c8](https://github.com/muxinc/elements/commit/205f3c86a334c8f3d641e0e9d00cf9b9b8305cf5))
+* add video-title attr & prop ([#1108](https://github.com/muxinc/elements/issues/1108)) ([7763a49](https://github.com/muxinc/elements/commit/7763a49d885e56342fffe874ba838059e15c906c)), closes [#639](https://github.com/muxinc/elements/issues/639)
+
+
+### Bug Fixes
+
+* bump player.style from 0.1.7 to 0.1.8 in the prod-dependencies group across 1 directory ([#1110](https://github.com/muxinc/elements/issues/1110)) ([34dcba4](https://github.com/muxinc/elements/commit/34dcba46b4955263da8dc05c128e0c6e98ccfbcb))
+* bump the prod-dependencies group across 1 directory with 2 updates ([#1109](https://github.com/muxinc/elements/issues/1109)) ([7969b53](https://github.com/muxinc/elements/commit/7969b53261ef055a76cf26ced26ab978338f2db9))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.25.1 to 0.25.2
+    * @mux/playback-core bumped from 0.28.7 to 0.29.0
+
+## [3.3.4](https://github.com/muxinc/elements/compare/@mux/mux-player@3.3.3...@mux/mux-player@3.3.4) (2025-04-10)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.25.0 to 0.25.1
+    * @mux/playback-core bumped from 0.28.6 to 0.28.7
+
+## [3.3.3](https://github.com/muxinc/elements/compare/@mux/mux-player@3.3.2...@mux/mux-player@3.3.3) (2025-04-03)
+
+
+### Bug Fixes
+
+* bump player.style from 0.1.6 to 0.1.7 in the prod-dependencies group across 1 directory ([#1095](https://github.com/muxinc/elements/issues/1095)) ([b9da4be](https://github.com/muxinc/elements/commit/b9da4bea21b0292de92ab504b2a903ee61dc5bea))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.24.5 to 0.25.0
+    * @mux/playback-core bumped from 0.28.5 to 0.28.6
+
+## [3.3.2](https://github.com/muxinc/elements/compare/@mux/mux-player@3.3.1...@mux/mux-player@3.3.2) (2025-03-31)
+
+
+### Bug Fixes
+
+* upgrade media-chrome ([#1094](https://github.com/muxinc/elements/issues/1094)) ([56d8395](https://github.com/muxinc/elements/commit/56d83953a58c236dd851b231f5c4487891eaa2aa)), closes [#1062](https://github.com/muxinc/elements/issues/1062)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.24.4 to 0.24.5
+    * @mux/playback-core bumped from 0.28.4 to 0.28.5
+
+## [3.3.1](https://github.com/muxinc/elements/compare/@mux/mux-player@3.3.0...@mux/mux-player@3.3.1) (2025-03-21)
+
+
+### Bug Fixes
+
+* bump media-chrome from 4.7.1 to 4.8.0 in /packages/mux-player in the prod-dependencies group across 1 directory ([#1084](https://github.com/muxinc/elements/issues/1084)) ([d2eccb5](https://github.com/muxinc/elements/commit/d2eccb5e3437da360873c84258f2e9624f1d2993))
+* **deps:** bump media-chrome from 4.5.0 to 4.7.1 ([#1079](https://github.com/muxinc/elements/issues/1079)) ([9609d01](https://github.com/muxinc/elements/commit/9609d0184becf9c067ccd5a77c61919e61decf04))
+* upgrade dependencies (castable-video, ...) ([#1087](https://github.com/muxinc/elements/issues/1087)) ([dc84f07](https://github.com/muxinc/elements/commit/dc84f07109565dc7ee29d691a0fc941c6854f762))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.24.3 to 0.24.4
+    * @mux/playback-core bumped from 0.28.3 to 0.28.4
+
+## [3.3.0](https://github.com/muxinc/elements/compare/@mux/mux-player@3.2.4...@mux/mux-player@3.3.0) (2025-02-13)
+
+
+### Features
+
+* implement Mux badge ([#988](https://github.com/muxinc/elements/issues/988)) ([2343df8](https://github.com/muxinc/elements/commit/2343df80fddcbf05485ed9d4ab27f1bb0fac04d0))
+
+
+### Bug Fixes
+
+* add missing menu part ([#1066](https://github.com/muxinc/elements/issues/1066)) ([f5c6d90](https://github.com/muxinc/elements/commit/f5c6d90999222a8eac7c62db60b097361a7effd0)), closes [#1065](https://github.com/muxinc/elements/issues/1065)
+* Mux-player imports ([#1056](https://github.com/muxinc/elements/issues/1056)) ([9b7ec1b](https://github.com/muxinc/elements/commit/9b7ec1b8b92a49f74ba361db90ddfa0a526c44d0))
+* **playback-core:** Update hls.js version to fix multi-DRM playready bug. ([#1060](https://github.com/muxinc/elements/issues/1060)) ([380ded2](https://github.com/muxinc/elements/commit/380ded2ce544b9c9ae6a1d108b9d48cd4feb58fd))
+* upgrade MC, fix theme flicker ([#1067](https://github.com/muxinc/elements/issues/1067)) ([b2fad06](https://github.com/muxinc/elements/commit/b2fad068300420d12ad25f26f24f8189f7ba6907))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/mux-video bumped from 0.24.2 to 0.24.3
+    * @mux/playback-core bumped from 0.28.2 to 0.28.3
+
 ## [3.2.4](https://github.com/muxinc/elements/compare/@mux/mux-player@3.2.3...@mux/mux-player@3.2.4) (2024-12-20)
 
 

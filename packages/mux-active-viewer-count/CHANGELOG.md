@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0-alpha.13](https://github.com/muxinc/elements/compare/@mux/mux-active-viewer-count@0.2.0-alpha.12...@mux/mux-active-viewer-count@0.2.0-alpha.13) (2025-03-21)
+
+
+### Bug Fixes
+
+* upgrade dependencies (castable-video, ...) ([#1087](https://github.com/muxinc/elements/issues/1087)) ([dc84f07](https://github.com/muxinc/elements/commit/dc84f07109565dc7ee29d691a0fc941c6854f762))
+
+## [0.2.0-alpha.12](https://github.com/muxinc/elements/compare/@mux/mux-active-viewer-count@0.2.0-alpha.11...@mux/mux-active-viewer-count@0.2.0-alpha.12) (2025-02-13)
+
+
+### Bug Fixes
+
+* upgrade MC, fix theme flicker ([#1067](https://github.com/muxinc/elements/issues/1067)) ([b2fad06](https://github.com/muxinc/elements/commit/b2fad068300420d12ad25f26f24f8189f7ba6907))
+
 ## [0.2.0-alpha.11](https://github.com/muxinc/elements/compare/@mux/mux-active-viewer-count@0.2.0-alpha.10...@mux/mux-active-viewer-count@0.2.0-alpha.11) (2024-12-20)
 
 

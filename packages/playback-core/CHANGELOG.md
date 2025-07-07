@@ -40,6 +40,79 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.30.1](https://github.com/muxinc/elements/compare/@mux/playback-core@0.30.0...@mux/playback-core@0.30.1) (2025-07-03)
+
+
+### Bug Fixes
+
+* type error in metadata response ([#1156](https://github.com/muxinc/elements/issues/1156)) ([d0ea117](https://github.com/muxinc/elements/commit/d0ea1173362070e1ea6cbe63bd37cd6e2680639f))
+* upgrade hls.js to 1.6.6, rm workaround MTA (multi-track audio) ([#1162](https://github.com/muxinc/elements/issues/1162)) ([ceb2d15](https://github.com/muxinc/elements/commit/ceb2d156af9f245577d2ca06f8863bec3acaeb80))
+
+## [0.30.0](https://github.com/muxinc/elements/compare/@mux/playback-core@0.29.1...@mux/playback-core@0.30.0) (2025-06-23)
+
+
+### Features
+
+* add free plan logo ([#1140](https://github.com/muxinc/elements/issues/1140)) ([a6b369e](https://github.com/muxinc/elements/commit/a6b369e6fb97427374be5aa960cf709a3851b7e9))
+* Google IMA support for mux-player and mux-video variants ([#1128](https://github.com/muxinc/elements/issues/1128)) ([ec31d4d](https://github.com/muxinc/elements/commit/ec31d4d55e856e20cc67170f25d996afc549403b))
+* retry logic for 412 not playable errors ([#1106](https://github.com/muxinc/elements/issues/1106)) ([677c90a](https://github.com/muxinc/elements/commit/677c90ac3be18290f458be422a2bcc41cd4b7a6d))
+
+
+### Bug Fixes
+
+* **playback-core:** prefer uri value for chapters session metadata when available. ([#1145](https://github.com/muxinc/elements/issues/1145)) ([4dd2a50](https://github.com/muxinc/elements/commit/4dd2a50a66dcac8b47d6af561ea4c0469e6f35a8))
+* support URI and VALUE for session data ([#1146](https://github.com/muxinc/elements/issues/1146)) ([930ad72](https://github.com/muxinc/elements/commit/930ad72a942cd636ffab83b5d81324ef80d8cc12))
+
+## [0.29.1](https://github.com/muxinc/elements/compare/@mux/playback-core@0.29.0...@mux/playback-core@0.29.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* **playback-core:** Change default of preferCmcd to 'none' for improved cacheability. Update reference docs to document preferCmcd (et al.). ([#1136](https://github.com/muxinc/elements/issues/1136)) ([4409304](https://github.com/muxinc/elements/commit/44093049b6629044dbb7fed10839f83667fdb37c))
+
+## [0.29.0](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.7...@mux/playback-core@0.29.0) (2025-05-01)
+
+
+### Features
+
+* add video-title attr & prop ([#1108](https://github.com/muxinc/elements/issues/1108)) ([7763a49](https://github.com/muxinc/elements/commit/7763a49d885e56342fffe874ba838059e15c906c)), closes [#639](https://github.com/muxinc/elements/issues/639)
+
+## [0.28.7](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.6...@mux/playback-core@0.28.7) (2025-04-10)
+
+
+### Bug Fixes
+
+* respect hls.js fatal error flag if available ([#1099](https://github.com/muxinc/elements/issues/1099)) ([6350a9b](https://github.com/muxinc/elements/commit/6350a9bf143a4cc0edcde5acabd3ae88f14609e7))
+
+## [0.28.6](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.5...@mux/playback-core@0.28.6) (2025-04-03)
+
+
+### Bug Fixes
+
+* allow extension less Mux m3u8 url as src ([#1096](https://github.com/muxinc/elements/issues/1096)) ([5e85462](https://github.com/muxinc/elements/commit/5e85462cb003afbef45373318b324feb876e2ae4))
+
+## [0.28.5](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.4...@mux/playback-core@0.28.5) (2025-03-31)
+
+
+### Bug Fixes
+
+* **playback-core:** Remove redundant FPS DRM generateRequest() for native playback. ([#1088](https://github.com/muxinc/elements/issues/1088)) ([c20063b](https://github.com/muxinc/elements/commit/c20063b8725d968aec0b751875850932639fb6e0))
+
+## [0.28.4](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.3...@mux/playback-core@0.28.4) (2025-03-21)
+
+
+### Bug Fixes
+
+* upgrade dependencies (castable-video, ...) ([#1087](https://github.com/muxinc/elements/issues/1087)) ([dc84f07](https://github.com/muxinc/elements/commit/dc84f07109565dc7ee29d691a0fc941c6854f762))
+
+## [0.28.3](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.2...@mux/playback-core@0.28.3) (2025-02-13)
+
+
+### Bug Fixes
+
+* **playback-core:** Update hls.js version to fix multi-DRM playready bug. ([#1060](https://github.com/muxinc/elements/issues/1060)) ([380ded2](https://github.com/muxinc/elements/commit/380ded2ce544b9c9ae6a1d108b9d48cd4feb58fd))
+* upgrade MC, fix theme flicker ([#1067](https://github.com/muxinc/elements/issues/1067)) ([b2fad06](https://github.com/muxinc/elements/commit/b2fad068300420d12ad25f26f24f8189f7ba6907))
+
 ## [0.28.2](https://github.com/muxinc/elements/compare/@mux/playback-core@0.28.1...@mux/playback-core@0.28.2) (2024-12-20)
 
 

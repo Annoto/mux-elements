@@ -15,6 +15,109 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.15.11](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.10...@mux/mux-audio@0.15.11) (2025-07-03)
+
+
+### Bug Fixes
+
+* upgrade hls.js to 1.6.6, rm workaround MTA (multi-track audio) ([#1162](https://github.com/muxinc/elements/issues/1162)) ([ceb2d15](https://github.com/muxinc/elements/commit/ceb2d156af9f245577d2ca06f8863bec3acaeb80))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.30.0 to 0.30.1
+
+## [0.15.10](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.9...@mux/mux-audio@0.15.10) (2025-06-23)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.29.1 to 0.30.0
+
+## [0.15.9](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.8...@mux/mux-audio@0.15.9) (2025-06-12)
+
+
+### Bug Fixes
+
+* bump the prod-dependencies group across 1 directory with 2 updates ([#1129](https://github.com/muxinc/elements/issues/1129)) ([e2ae00b](https://github.com/muxinc/elements/commit/e2ae00b3307161971326099a1a7af7c8f45163f4))
+* bump the prod-dependencies group across 2 directories with 4 updates ([#1138](https://github.com/muxinc/elements/issues/1138)) ([0ac6871](https://github.com/muxinc/elements/commit/0ac68711fbf083964c442b8cea04dd76f1cfd288))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.29.0 to 0.29.1
+
+## [0.15.8](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.7...@mux/mux-audio@0.15.8) (2025-05-01)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.7 to 0.29.0
+
+## [0.15.7](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.6...@mux/mux-audio@0.15.7) (2025-04-10)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.6 to 0.28.7
+
+## [0.15.6](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.5...@mux/mux-audio@0.15.6) (2025-04-03)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.5 to 0.28.6
+
+## [0.15.5](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.4...@mux/mux-audio@0.15.5) (2025-03-31)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.4 to 0.28.5
+
+## [0.15.4](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.3...@mux/mux-audio@0.15.4) (2025-03-21)
+
+
+### Bug Fixes
+
+* upgrade dependencies (castable-video, ...) ([#1087](https://github.com/muxinc/elements/issues/1087)) ([dc84f07](https://github.com/muxinc/elements/commit/dc84f07109565dc7ee29d691a0fc941c6854f762))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.3 to 0.28.4
+
+## [0.15.3](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.2...@mux/mux-audio@0.15.3) (2025-02-13)
+
+
+### Bug Fixes
+
+* **playback-core:** Update hls.js version to fix multi-DRM playready bug. ([#1060](https://github.com/muxinc/elements/issues/1060)) ([380ded2](https://github.com/muxinc/elements/commit/380ded2ce544b9c9ae6a1d108b9d48cd4feb58fd))
+* upgrade MC, fix theme flicker ([#1067](https://github.com/muxinc/elements/issues/1067)) ([b2fad06](https://github.com/muxinc/elements/commit/b2fad068300420d12ad25f26f24f8189f7ba6907))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @mux/playback-core bumped from 0.28.2 to 0.28.3
+
 ## [0.15.2](https://github.com/muxinc/elements/compare/@mux/mux-audio@0.15.1...@mux/mux-audio@0.15.2) (2024-12-20)
 
 

@@ -1,7 +1,7 @@
-import { assert, nextFrame, oneEvent, aTimeout, waitUntil } from '@open-wc/testing';
+import { assert, fixture, oneEvent } from '@open-wc/testing';
 import { addCuePoints, getCuePoints, getActiveCuePoint } from '../src/text-tracks.ts';
 
-describe('textTracks', () => {
+describe('textTracks', function () {
   describe('cuePoints', () => {
     let mediaEl;
     const cuePoints = [
@@ -14,8 +14,13 @@ describe('textTracks', () => {
       { time: 6, value: { complex: 'object' } },
     ];
 
-    beforeEach(() => {
-      mediaEl = document.createElement('video');
+    beforeEach(async () => {
+      mediaEl = await fixture(`<video
+        src="https://stream.mux.com/A3VXy02VoUinw01pwyomEO3bHnG4P32xzV7u1j1FSzjNg/low.mp4"
+        preload="auto"
+        crossorigin
+        muted
+      ></video>`);
     });
 
     afterEach(() => {
@@ -97,8 +102,6 @@ describe('textTracks', () => {
       });
 
       it('should set the last cuePoint endTime as mediaEl.duration if duration is a finite number', async () => {
-        mediaEl.src = 'https://stream.mux.com/A3VXy02VoUinw01pwyomEO3bHnG4P32xzV7u1j1FSzjNg/low.mp4';
-        mediaEl.load();
         await oneEvent(mediaEl, 'durationchange');
         const track = await addCuePoints(mediaEl, cuePoints);
         const lastCue = track.cues[track.cues.length - 1];
@@ -153,9 +156,9 @@ describe('textTracks', () => {
       });
 
       it('should get the active cuePoint based on the media element currentTime', async () => {
-        mediaEl.src = 'https://stream.mux.com/A3VXy02VoUinw01pwyomEO3bHnG4P32xzV7u1j1FSzjNg/low.mp4';
-        mediaEl.load();
-        await oneEvent(mediaEl, 'canplay');
+        if (mediaEl.readyState < HTMLMediaElement.HAVE_METADATA) {
+          await oneEvent(mediaEl, 'loadedmetadata');
+        }
         const track = await addCuePoints(mediaEl, cuePoints);
         const expectedCuePoint = cuePoints[1];
         // NOTE: There are precision considerations with active cues and currentTime. To test, seek
@@ -167,9 +170,9 @@ describe('textTracks', () => {
       });
 
       it('should get the closest previous cuePoint when seeking between cuePoint timestamps', async () => {
-        mediaEl.src = 'https://stream.mux.com/A3VXy02VoUinw01pwyomEO3bHnG4P32xzV7u1j1FSzjNg/low.mp4';
-        mediaEl.load();
-        await oneEvent(mediaEl, 'canplay');
+        if (mediaEl.readyState < HTMLMediaElement.HAVE_METADATA) {
+          await oneEvent(mediaEl, 'loadedmetadata');
+        }
         const track = await addCuePoints(mediaEl, cuePoints);
         const expectedCuePoint = cuePoints[1];
         const currentTime = expectedCuePoint.time + (cuePoints[2].time - expectedCuePoint.time) / 2;
@@ -180,9 +183,9 @@ describe('textTracks', () => {
       });
 
       it('should get the closest previous cuePoints even after adding multiple times', async () => {
-        mediaEl.src = 'https://stream.mux.com/A3VXy02VoUinw01pwyomEO3bHnG4P32xzV7u1j1FSzjNg/low.mp4';
-        mediaEl.load();
-        await oneEvent(mediaEl, 'canplay');
+        if (mediaEl.readyState < HTMLMediaElement.HAVE_METADATA) {
+          await oneEvent(mediaEl, 'loadedmetadata');
+        }
         const track = await addCuePoints(mediaEl, cuePoints);
         const expectedCuePoint1 = cuePoints[1];
         const expectedCuePoint2 = {

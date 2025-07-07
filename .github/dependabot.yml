@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directories:
+      - '/'
+      - '/packages/*'
+    schedule:
+      interval: 'daily'
+    commit-message:
+      prefix: 'fix'
+      prefix-development: 'chore'
+    groups:
+      prod-dependencies:
+        patterns:
+          - 'media-chrome'
+          - 'player.style'
+          - 'castable-video'
+          - 'custom-media-element'
+          - 'media-tracks'
+    allow:
+      - dependency-name: 'media-chrome'
+      - dependency-name: 'player.style'
+      - dependency-name: 'castable-video'
+      - dependency-name: 'custom-media-element'
+      - dependency-name: 'media-tracks'

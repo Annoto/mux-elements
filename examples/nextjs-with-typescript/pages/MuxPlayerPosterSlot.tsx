@@ -25,6 +25,7 @@ function MuxPlayerPage() {
         playbackId="VcmKA6aqzIzlg3MayLJDnbF55kX00mds028Z65QxvBYaA"
         autoPlay={autoplay}
         muted={muted}
+        defaultHiddenCaptions={true}
         onPlay={() => {
           setPaused(false);
         }}
@@ -33,7 +34,7 @@ function MuxPlayerPage() {
         }}
       >
         <img
-          style={{ objectFit: 'contain', height: '100%' }}
+          style={{ display: 'block', objectFit: 'contain', height: '100%' }}
           slot="poster"
           src="https://image.mux.com/VcmKA6aqzIzlg3MayLJDnbF55kX00mds028Z65QxvBYaA/thumbnail.webp"
           alt=""

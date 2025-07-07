@@ -167,6 +167,10 @@
       --media-menu-item-hover-outline: var(--_accent-color) solid 1px;
     }
 
+    media-rendition-menu {
+      min-width: 140px;
+    }
+
     /* The icon is a circle so make it 16px high instead of 14px for more balance. */
     media-audio-track-menu-button {
       --media-control-padding: 5px;
@@ -391,6 +395,10 @@
       display: none;
     }
 
+    media-error-dialog:not([mediaerrorcode]) {
+      opacity: 0;
+    }
+
     media-loading-indicator {
       --media-loading-icon-width: 100%;
       --media-button-icon-height: auto;
@@ -588,8 +596,15 @@
   </style>
 
   <template partial="TitleDisplay">
-    <template if="title">
-      <media-text-display part="top title display" class="title-display">{{title}}</media-text-display>
+    <template if="videotitle">
+      <template if="videotitle != true">
+        <media-text-display part="top title display" class="title-display">{{videotitle}}</media-text-display>
+      </template>
+    </template>
+    <template if="!videotitle">
+      <template if="title">
+        <media-text-display part="top title display" class="title-display">{{title}}</media-text-display>
+      </template>
     </template>
   </template>
 
@@ -949,7 +964,7 @@
           }
 
           [aria-checked='false'] .indicator {
-            display: none;
+            opacity: 0;
           }
         </style>
         <svg viewBox="0 0 14 18" class="indicator">
